@@ -2,7 +2,7 @@
     namespace App\Http\classes\RPG;
 
 abstract class Personagens {
-    private string $nome;
+    protected string $nome;
     private int $vida;
     private int $forca;
 

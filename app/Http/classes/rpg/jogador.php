@@ -12,13 +12,13 @@ class Jogador extends Personagens{
     }
 
     public function atacar(): string{
-        $dano=$this->ataque*2;
+        $dano=$this->atacar()*2;
         return "{this->nome} atacou e causou {$dano} de dano";
     }
 
     public function ganharExperiencia(int $experiencia): string{
         $this->experiencia += $experiencia;
-        return "{$this->$nome} ganhou {$experiencia} de experiencia";
+        return "{$this->nome} ganhou {$experiencia} de experiencia";
     }
 
 
