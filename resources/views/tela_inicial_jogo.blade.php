@@ -11,6 +11,10 @@
 <body>
     <h1 class="NomeGame">A LENDA DE ORION</h1>
 
-    <p>Aqui você vai descobrir novas aventuras e viver uma experiência incrível</p>
+    <h2>Aqui você vai descobrir novas aventuras e viver uma experiência incrível</h2>
+
+    <p>Clique no botão e se divirta</p>
+
+    <button id="botão">Jogue aqui</button>
 </body>
 </html>

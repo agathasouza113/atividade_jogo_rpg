@@ -1,20 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
+
 body{
     margin: 0;
     padding: 0;
 }
 
-
 .NomeGame{
-    font-size: 4rem;
+    font-size: 5rem;
     color: purple;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Saira", sans-serif;
     display: flex;
     justify-content: center;
+    margin-bottom: 1rem;
+}
+
+body h2{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 2.5rem;
+    color: rgb(90, 29, 121);
+    margin-top: 0;
 }
 
 body p{
     font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
     font-size: 2rem;
-    color: rgb(90, 29, 121);
+    color: rgb(60, 1, 86);
+    text-align: center;
+    margin-top: 5rem;
+}
+
+#botão{
+    display: block;
+    margin: 0 auto;
+    padding: 1rem;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: plum;
+    color: rgb(71, 4, 98);
+    border: none;
+    border-radius: 10px;
+
 }
