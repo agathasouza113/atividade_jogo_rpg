@@ -42,3 +42,10 @@ body p{
     border-radius: 10px;
 
 }
+
+#botão:hover{
+    background-color: rgb(170, 64, 181);
+    color: rgb(244, 207, 244);
+    cursor: pointer;
+    box-shadow: 0 0 10px rgb(181, 149, 211);
+}
