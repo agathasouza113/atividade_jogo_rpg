@@ -3,8 +3,8 @@
 
 abstract class Personagens {
     protected string $nome;
-    private int $vida;
-    private int $forca;
+    protected int $vida;
+    protected int $forca;
 
     public function __construct(string $nome, int $vida, int $forca)
     {

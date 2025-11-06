@@ -20,11 +20,5 @@ class Jogador extends Personagens{
         $this->experiencia += $experiencia;
         return "{$this->nome} ganhou {$experiencia} de experiencia";
     }
-
-
 }
-
-
-
-
 ?>
