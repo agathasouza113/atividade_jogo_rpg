@@ -1,0 +1,20 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+
+.NomeGame{
+    font-size: 4rem;
+    color: purple;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+body p{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 2rem;
+    color: rgb(90, 29, 121);
+}
