@@ -13,8 +13,11 @@
 
     <h2>Aqui você vai descobrir novas aventuras e viver uma experiência incrível</h2>
 
-    <p>Clique no botão e se divirta</p>
+<div class="botões-container">
+    <button id="botão">Novo Jogo</button>
+    <button id="botão">Continuar jogo</button>
+    <button id="botão">Definições</button>
+</div>
 
-    <button id="botão">Jogue aqui</button>
 </body>
 </html>

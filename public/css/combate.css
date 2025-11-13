@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    height: 100%; /* Garante que o body ocupe toda a altura da tela */
+}
+
+body{
+    background-color: black;
+    display: flex;
+    flex-direction: column; /* Alinha o conteúdo de cima para baixo */
+    justify-content: center; /* Centraliza verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
+    font-family: "Press Start 2P", system-ui;
+}
+
+header h1{
+    font-size: 3rem;
+    color: rgb(242, 0, 0);
+    text-align: center;
+    font-family: "Press Start 2P", system-ui;
+    margin-top: 2rem;
+}
+
+.cards{
+    font-size: 2rem;
+    font-family:"Press Start 2P", system-ui;
+    display: flex;
+    align-items: center; /* Alinha o texto dos cards ao centro */
+    margin-top: 2rem; /* Espaço entre o título e os cards */
+    gap: 30px;
+}
+
+
+.heroi-card{
+    color: rgb(48, 232, 48);
+}
+
+.vilao-card{
+    color: rgb(215, 35, 35);
+}

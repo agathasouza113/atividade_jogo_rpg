@@ -1,51 +1,71 @@
 @import url('https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
 
 body{
     margin: 0;
     padding: 0;
+    background-color: black;
 }
 
 .NomeGame{
     font-size: 5rem;
     color: purple;
-    font-family: "Saira", sans-serif;
+    text-shadow: 0 0 7px #ffffff,
+    0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px rgb(222, 17, 237), /* Cor neon principal, mais intensa */
+    0 0 80px rgb(190, 16, 203),
+    0 0 90px rgb(190, 16, 203),
+    0 0 100px rgb(190, 16, 203),
+    0 0 150px rgb(190, 16, 203);
+    font-family: "Press Start 2P", system-ui;
     display: flex;
     justify-content: center;
-    margin-bottom: 1rem;
 }
 
 body h2{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Press Start 2P", system-ui;
     text-align: center;
     font-size: 2.5rem;
-    color: rgb(90, 29, 121);
-    margin-top: 0;
-}
-
-body p{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 2rem;
-    color: rgb(60, 1, 86);
-    text-align: center;
+    color: rgb(186, 2, 186);
     margin-top: 5rem;
 }
 
+.botões-container {
+    display: flex;
+    justify-content: space-evenly; /* Distribui os botões igualmente ao longo do contêiner */
+    gap: 20px; /* Espaçamento entre os botões */
+    margin-top: 6rem; /* Ajuste do espaço acima dos botões */
+}
+
+
 #botão{
-    display: block;
-    margin: 0 auto;
-    padding: 1rem;
-    font-size: 1rem;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: plum;
-    color: rgb(71, 4, 98);
-    border: none;
+    padding: 1.5rem;
+    font-size: 1.4rem;
+    font-family: "Press Start 2P", system-ui;
+    background-color: purple;
+    border: 3px solid transparent;
     border-radius: 10px;
+    box-shadow:
+    0 0 5px rgb(193, 115, 193),
+    0 0 25px rgb(255, 255, 255),
+    0 0 50px rgb(199, 107, 199),
+    0 0 100px rgb(192, 83, 192);
+    color: #fff;
+    transition: all 0.3s ease; /* Transição suave para efeitos */
+    text-align: center;
+    width: 15rem;
+    height: 8rem;
 
 }
 
 #botão:hover{
-    background-color: rgb(170, 64, 181);
+    background-color: rgb(58, 1, 58);
     color: rgb(244, 207, 244);
     cursor: pointer;
-    box-shadow: 0 0 10px rgb(181, 149, 211);
+    box-shadow: 0 0 5px rgb(251, 251, 251),
+    0 0 25px rgb(124, 0, 161),
+    0 0 50px rgb(139, 0, 139),
+    0 0 100px rgb(175, 10, 193); /* Ajuste do box-shadow no hover para a mesma consistência */
 }

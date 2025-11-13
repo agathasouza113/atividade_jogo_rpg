@@ -1,24 +1,39 @@
 <?php
-namespace app\Http\classes\rpg;
+namespace app\classes\rpg;
 
-use App\Http\classes\RPG\Personagens;
+class Jogador {
+    public $nome;
+    public $vida;
+    public $ataque;
+    public $defesa;
+    public $arma;
 
-class Jogador extends Personagens{
-    private int $experiencia;
-    public function __construct(string $nome, int $vida, int $ataque, int $defesa)
-    {        parent::__construct( $nome,$vida, $ataque);
-
-        $this->experiencia =0;
+    public function __construct($nome, $vida, $ataque, $defesa) {
+        $this->nome = $nome;
+        $this->vida = $vida;
+        $this->ataque = $ataque;
+        $this->defesa = $defesa;
     }
 
-    public function atacar(): string{
-        $dano=$this->atacar()*2;
-        return "{this->nome} atacou e causou {$dano} de dano";
+    public function equiparArma($arma) {
+        $this->arma = $arma;
     }
 
-    public function ganharExperiencia(int $experiencia): string{
-        $this->experiencia += $experiencia;
-        return "{$this->nome} ganhou {$experiencia} de experiencia";
+    public function atacar() {
+        $dano = $this->ataque;
+        if ($this->arma) $dano += $this->arma->usar();
+        return $dano;
+    }
+
+    public function defender($dano) {
+        $danoFinal = max(0, $dano - $this->defesa);
+        $this->vida -= $danoFinal;
+        return $danoFinal;
+    }
+
+    public function estaVivo() {
+        return $this->vida > 0;
     }
 }
+
 ?>
